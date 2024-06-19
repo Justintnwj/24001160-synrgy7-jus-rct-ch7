@@ -1,0 +1,336 @@
+openapi: 3.0.3
+info:
+  title: API binar rental cars
+  description: API to manage binar rental cars application
+  version: 1.0.0
+servers:
+  - url : http://localhost:8000/api/v1
+    description: Local server
+paths:
+  /api/v1/cars:
+    get:
+      summary: Get List All Cars Available
+      tags: 
+        - Cars
+      responses:
+        '200':
+          description: A list of cars
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Cars'
+    post:
+      summary: Create Data Cars
+      tags: 
+        - Cars
+      requestBody:
+        description: Car to create
+        required: True
+        content:
+          application/json:
+            schema: 
+              type: object
+              items:
+                $ref: '#/components/schemas/InputCars'
+      responses:
+        '201':
+          description: Mobil berhasil diinput
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Cars'
+  /api/v1/cars/:name:
+    put:
+      summary: Update Data Cars
+      tags: 
+        - Cars
+      requestBody:
+        description: Car to update
+        required: True
+        content:
+          application/json:
+            schema: 
+              type: object
+              items:
+                $ref: '#/components/schemas/UpdateCars'
+      responses:
+        '201':
+          description: Mobil berhasil diupdate
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Cars'
+    delete:
+      summary: Delete Data Cars
+      tags: 
+        - Cars
+      responses:
+        '202':
+          description: Mobil berhasil dihapus
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Cars'
+  /api/v1/all-cars:
+    get:
+      summary: Get List All Cars
+      tags: 
+        - Cars
+      responses:
+        '200':
+          description: A list of cars
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Cars'
+  /api/v1/register:
+    post:
+      summary: Register user
+      tags: 
+        - Users
+      requestBody:
+        description: User to register
+        required: True
+        content:
+          application/json:
+            schema: 
+              type: object
+              items:
+                $ref: '#/components/schemas/RegisterUser'
+      responses:
+        '201':
+          description: Berhasil melakukan registrasi
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Users'
+  /api/v1/login:
+    post:
+      summary: Login user
+      tags: 
+        - Users
+      requestBody:
+        description: User to login
+        required: True
+        content:
+          application/json:
+            schema: 
+              type: object
+              items:
+                $ref: '#/components/schemas/LoginUser'
+      responses:
+        '201':
+          description: Berhasil login,
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Users'
+  /api/v1/whoami:
+    post:
+      summary: Who Am I
+      tags: 
+        - Users
+      responses:
+        '201':
+          description: Melihat data user melalui token
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Users'
+  /api/v1/users:
+    get:
+      summary: Get All Users
+      tags: 
+        - Users
+      responses:
+        '200':
+          description: A List of Users
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Users'
+  /api/v1/users/:id:
+    put:
+      summary: Update Role User
+      tags: 
+        - Users
+      requestBody:
+        description: User to update
+        required: True
+        content:
+          application/json:
+            schema: 
+              type: object
+              items:
+                $ref: '#/components/schemas/UpdateUser'
+      responses:
+        '200':
+          description: User's Role Update
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Users'
+    delete:
+      summary: Delete User
+      tags: 
+        - Users
+      responses:
+        '200':
+          description: User's Delete
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: '#/components/schemas/Users'
+components:
+  schemas:
+    Cars:
+      type: object
+      properties:
+        id : 
+          type: integer
+          example: 1
+        name: 
+          type: string
+          example: "Fortuner"
+        availability: 
+          type: boolean
+          example: True
+        price: 
+          type: integer
+          example: 400000
+        category: 
+          type: string
+          example: "Dengan Driver"
+        image: 
+          type: string
+          example: "fortuner1.jpg"
+        start_date: 
+          type: string
+          example: '2024-05-28'
+        end_date: 
+          type: string
+          example: '2024-05-28'
+    InputCars:
+      type: object
+      properties:
+        name: 
+          type: string
+          example: "Fortuner"
+        availability: 
+          type: boolean
+          example: True
+        price: 
+          type: integer
+          example: 400000
+        category: 
+          type: string
+          example: "Dengan Driver"
+        image: 
+          type: string
+          example: "fortuner1.jpg"
+        start_date: 
+          type: string
+          example: '2024-05-28'
+        end_date: 
+          type: string
+          example: '2024-05-28'
+    UpdateCars:
+      type: object
+      properties:
+        name: 
+          type: string
+          example: "Fortuner"
+        availability: 
+          type: boolean
+          example: True
+        price: 
+          type: integer
+          example: 400000
+        category: 
+          type: string
+          example: "Dengan Driver"
+        image: 
+          type: string
+          example: "fortuner1.jpg"
+        start_date: 
+          type: string
+          example: '2024-05-28'
+        end_date: 
+          type: string
+          example: '2024-05-28'
+    Users:
+      type: object
+      properties:
+        id : 
+          type: integer
+          example: 1
+        email: 
+          type: string
+          example: "cobacoba12@gmail.com"
+        encryptedPassword: 
+          type: string
+          example: "$2a$10$awpD194DXI4t07u1rA.NAuuYLygIszO77VojYq6eIs4SuURCACZTK"
+        role: 
+          type: string
+          example: admin
+    RegisterUser:
+      type: object
+      properties:
+        email: 
+          type: string
+          example: "cobacoba12@gmail.com"
+        Password: 
+          type: string
+          example: "123456"
+    LoginUser:
+      type: object
+      properties:
+        email: 
+          type: string
+          example: "cobacoba12@gmail.com"
+        Password: 
+          type: string
+          example: "123456"
+    WhoAmI:
+      type: object
+      properties:
+        email: 
+          type: string
+          example: "cobacoba12@gmail.com"
+        Password: 
+          type: string
+          example: "123456"
+    UpdateUser:
+      type: object
+      properties:
+        id : 
+          type: integer
+          example: 1
+        email: 
+          type: string
+          example: "cobacoba12@gmail.com"
+        role: 
+          type: string
+          example: admin

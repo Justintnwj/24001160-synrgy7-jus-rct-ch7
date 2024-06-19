@@ -1,0 +1,1182 @@
+.font,
+.font a,
+.font p,
+.font h2,
+.carouselDesc h3,
+a.font {
+    color: black;
+    letter-spacing: 0em;
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.font h1 {
+    font-family: Helvetica;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    margin: 0px 0px 0px 0px;
+}
+
+.firstDescOurService h2 {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.whyUsDesc h3 {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.whyUsListBenefit h4 {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 16px;
+}
+
+.registerButton,
+.carRentButton {
+    height: 36px;
+    border-radius: 2px;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    background-color: #5CB85F;
+    border-style: none;
+}
+
+.registerButton {
+    width: 81px;
+}
+
+.carRentButton {
+    width: 140px;
+}
+
+.registerButton a,
+.carRentButton a {
+    font-family: Helvetica;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    background-color: #F1F3FF;
+}
+
+nav.navbar.navbar-expand-xl {
+    padding: 24px 0px 0px 0px;
+}
+
+.rectangle {
+    background-color: #0D28A6;
+    width: 100px;
+    height: 34px;
+}
+
+.header .rectangle {
+    margin-left: 16px;
+}
+
+div#offcanvasNavbar.offcanvas.offcanvas-end.show {
+    width: 180px;
+}
+
+
+div.offcanvas-header {
+    margin: 32px 0px 0px 16px;
+    padding: 0px 0px 0px 0px;
+    width: 140px;
+}
+
+div.offcanvas-body {
+    margin: 16px 0px 0px 16px;
+    padding: 0px 0px 0px 0px;
+}
+
+.navbar-toggler {
+    margin-right: 16px;
+}
+
+.offcanvas-title {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+}
+
+.nav-item {
+    width: 88px;
+    justify-content: left;
+    display: flex;
+}
+
+a.nav-link {
+    text-decoration: none;
+    font-weight: 400;
+    text-align: left;
+}
+
+.nav-item-our {
+    display: flex;
+    align-items: left;
+}
+
+.home {
+    padding-top: 32px;
+    padding-left: 16px;
+    background-color: #F1F3FF;
+}
+
+.homeDesc h1 {
+    margin-bottom: 16px;
+}
+
+.carRentButton {
+    margin-bottom: 24px;
+}
+
+.carImage img {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+}
+
+.ourService {
+    padding-top: 60px;
+    padding-left: 16px;
+}
+
+.serviceImage {
+    padding-left: 38px;
+    padding-right: 54px;
+}
+
+.serviceImage img {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+}
+
+.ourServiceDesc {
+    padding-top: 24px;
+}
+
+.firstDescOurService p {
+    padding-top: 8px;
+}
+
+.secondDescOurService {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ourServiceBenefit {
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.ourServiceBenefit img {
+    display: flex;
+    align-items: center;
+}
+
+.listBenefit {
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.whyUs {
+    width: 100%;
+    padding: 60px 16px 0px 16px;
+}
+
+.whyUsDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whyUsDesc p {
+    padding: 8px 0px 8px 0px;
+}
+
+.whyUsListBenefit {
+    margin-bottom: 16px;
+    border-style: solid;
+    border-color: #D0D0D0;
+    border-width: 1px;
+    border-radius: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.whyUsListBenefit img {
+    padding-top: 24px;
+}
+
+.whyUsListBenefit p {
+    padding-bottom: 24px;
+    margin: 0px;
+}
+
+.testimonial {
+    padding: 44px 16px 0px 16px;
+}
+
+.testimonialDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonialDesc h3 {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+}
+
+.carousel {
+    border-style: solid;
+    border-color: #D0D0D0;
+    border-width: 1px;
+    border-radius: 8px;
+}
+
+.profilePicture {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.gambar {
+    width: 24.4%;
+    height: 24.4%;
+}
+
+.carouselDesc {
+    width: 100%;
+}
+
+.profileRate {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.carouselDesc p {
+    padding: 24px 9.756% 8px 9.756%;
+    margin: 0px;
+}
+
+.carouselDesc h3 {
+    padding: 0px 9.756% 40px 9.756%;
+    margin: 0px;
+    font-weight: 400;
+}
+
+.leftButton {
+    position: absolute;
+    width: 80%;
+}
+
+.carousel-control-prev {
+    width: 8.88%;
+    height: 8.88%;
+    margin-left: 43%;
+    margin-top: 32px;
+}
+
+.carousel-control-prev-icon {
+    background-color: #5CB85F;
+    border-radius: 16px;
+}
+
+.rightButton {
+    position: absolute;
+    width: 80%;
+}
+
+.carousel-control-next {
+    width: 8.88%;
+    height: 8.88%;
+    margin-right: 18%;
+    margin-top: 32px;
+}
+
+.carousel-control-next-icon {
+    background-color: #5CB85F;
+    border-radius: 16px;
+}
+
+.faq {
+    width: 100%;
+    padding: 60px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.faqDesc h2 {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.faqDesc .font {
+    margin: 0px;
+    text-align: center;
+}
+
+
+.accordion {
+    margin-top: 8px;
+    width: 100%;
+}
+
+div#accordionExample.accordion {
+    margin: 0px
+}
+
+.accordion-item {
+    margin-top: 16px;
+}
+
+.accordion-header,
+.accordion-body {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 3px;
+
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.accordion-button.collapsed {
+    padding: 16px 24px 16px 24px;
+}
+
+.rentNow {
+    width: 100%;
+    margin-top: 108px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.rentNowCenter {
+    width: 100%;
+    background-color: #0D28A6;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rentNowTitle {
+    font-family: Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+    color: white;
+    text-align: center;
+    padding: 64px 17.682% 0px 17.682%;
+}
+
+.rentNowDesc {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    padding: 16px 17.682% 0px 17.682%;
+}
+
+.carRentButton.font {
+    margin: 32px 0px 64px 0px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    margin-bottom: 60px;
+    padding-top: 60px;
+}
+
+div.navbarFooterPart.font,
+.connectWith,
+.socialMediaPart,
+.copyright h2 {
+    margin-bottom: 16px;
+}
+
+.socialMediaPart {
+    width: 224px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.font a {
+    text-decoration: none;
+}
+
+.footer .rectangle {
+    margin: 0px 0px 0px 0px;
+}
+
+.loginPage img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: -9%;
+    opacity: 70%;
+}
+
+
+.loginForm {
+    width: 28.52%;
+    height: 151.572%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 57px 0px 55px;
+    justify-content: center;
+}
+
+.rectangleAdmin {
+    width: 100px;
+    height: 34px;
+    background-color: #CFD4ED;
+}
+
+.errorMessage {
+    padding: 12px 16px 12px 24px;
+    margin-bottom: 16px;
+    background-color: rgba(208, 12, 26, 0.1);
+}
+
+.successMessage {
+    padding: 12px 16px 12px 24px;
+    margin-bottom: 16px;
+    background-color: #5CB85F;
+}
+
+p#insert-results.resultWrong {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+    color: #D00C1A;
+    margin: 0px;
+}
+
+p#insert-results.resultSuccess {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+    color: white;
+    margin: 0px;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm h2 {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    margin: 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.loginForm h3 {
+    margin-bottom: 9px;
+}
+
+.loginForm .email {
+    margin-bottom: 16px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #0000001A;
+    padding: 10px 0px 10px 15px;
+}
+
+.loginForm .password,
+.loginForm .name {
+    margin-bottom: 31.75px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #0000001A;
+    padding: 10px 0px 10px 15px;
+}
+
+.buttonLogin,
+.buttonRegister {
+    top: 590px;
+    left: 1013px;
+    padding: 8px 12px 8px 12px;
+    gap: 10px;
+    border-radius: 2px;
+    opacity: 0px;
+    background: #0D28A6;
+    color: #FFFFFF;
+    border-style: none;
+}
+
+.buttonRegister {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background: #5CB85F;
+}
+
+.landingPage {
+    display: flex;
+    width: 100%;
+}
+
+.navbarAdmin {
+    width: 70px;
+    height: 902px;
+    background-color: #0D28A6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rectangleAdminMini {
+    margin: 18px 0px;
+    width: 34px;
+    height: 34px;
+    background-color: #CFD4ED;
+}
+
+.navbarMenu {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    height: 64px;
+}
+
+.navbarMenu h3 {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.navbarMenu:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbarDesc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerAdmin {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 24px;
+    justify-content: space-between;
+}
+
+.burgerIcon {
+    margin-left: 9.077%;
+}
+
+.d-flex {
+    margin-left: 50.378%;
+}
+
+.currentUser {
+    width: 143px;
+    height: 38px;
+    margin-left: 1.815%;
+    display: flex;
+    align-items: center;
+}
+
+.userName {
+    margin-left: 8px;
+}
+
+.mainAdmin {
+    display: flex;
+}
+
+.navbarFunctionDesc {
+    width: 16.05%;
+    height: 832px;
+    padding-top: 23px;
+}
+
+.navbarContentTitle {
+    color: #8A8A8A;
+    padding: 11px 24px 11px 24px;
+}
+
+.navbarContent {
+    color: #222222;
+    padding: 11px 24px 11px 24px;
+}
+
+.navbarContent:hover {
+    background-color: #CFD4ED;
+}
+
+.activeBc {
+    background-color: #CFD4ED;
+}
+
+.navTable {
+    width: 83.95%;
+    padding-left: 25px;
+}
+
+.breadcrumb {
+    margin: 32px 0px 24px 0px;
+}
+
+.titleNavTable {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+
+.listDashboard{
+    margin-top: 24px;
+}
+
+.titleListOrderTable, .titleListCarsTable {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    margin-bottom: 16px;
+}
+
+.titleListCarsTable{
+    
+}
+.titleListOrderTable h4.font, .titleListCarsTable h4.font {
+    margin: 0px;
+}
+
+.rectangleLOT {
+    width: 4px;
+    height: 24px;
+    background-color:#0D28A6;
+    margin-right: 8px;
+}
+
+/* Home.css */
+
+.dataCars {
+    display: flex;
+    flex-direction: column;
+}
+.tableCars {
+    width: 100%;
+    border-collapse: collapse; /* Agar batas antar sel tabel tidak terlihat */
+}
+
+.tableCars th, .tableCars td {
+    padding: 12px 8px; /* Sesuaikan padding sesuai kebutuhan */
+}
+
+th.tableHeadNo {
+    padding-left: 16px;
+}
+
+th.tableHeadUpdated {
+    padding-right: 16px;
+}
+
+.tableCarsHead {
+    height: 44px;
+    background-color: #CFD4ED;
+}
+
+.dataCars nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.pagination {
+    margin-top: 40px;
+}
+
+@media only screen and (min-width:1200px) {
+
+    .nav-item-our {
+        width: 105px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    a.nav-link {
+        text-decoration: none;
+        justify-content: center;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .header .rectangle {
+        margin-left: 136px;
+    }
+
+    .nav-item {
+        width: 88px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .navbar-nav {
+        margin-right: 136px;
+    }
+
+    div.offcanvas-body {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .home {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 136px;
+        padding-right: 0px;
+    }
+
+    .homeDesc h1 {
+        width: 94.66%;
+    }
+
+    .homeDesc p {
+        width: 78%;
+    }
+
+    .carImage img {
+        width: 704px;
+        height: 407px;
+    }
+
+    .ourService {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 14.3%;
+        padding-right: 14.3%;
+    }
+
+    .serviceImage {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .serviceImage img {
+        width: 459px;
+        height: 428px;
+    }
+
+    .ourServiceDesc {
+        padding-left: 9.73%;
+        padding-top: 36px;
+    }
+
+    .firstDescOurService h2 {
+        width: 91%;
+    }
+
+    .firstDescOurService p {
+        width: 91%;
+    }
+
+    .ourServiceBenefit {
+        width: 91%;
+    }
+
+    .firstDescOurService p.font {
+        width: 100%;
+    }
+
+    .whyUs {
+        padding: 100px 136px 0px 136px;
+    }
+
+    .whyUsDesc {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 16px;
+    }
+
+    .whyUsBenefit {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .whyUsListBenefit {
+        width: 22.945%;
+    }
+
+    .testimonial {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel {
+        width: 42.986%;
+    }
+
+    div.carousel-item.active {
+        display: flex;
+    }
+
+    .profilePicture {
+        width: 27.786%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .gambar {
+        width: 46.51%;
+        height: auto;
+    }
+
+    .carouselDesc {
+        width: 92.841%;
+    }
+
+    .profileRate {
+        padding: 69px 0px 8px 0px;
+        display: flex;
+        justify-content: left;
+    }
+
+    .carouselDesc p {
+        padding: 0px 0px 8px 0px;
+        display: flex;
+        justify-content: left;
+    }
+
+    .carouselDesc h3 {
+        padding: 0px 0px 69px 0px;
+        display: flex;
+        justify-content: left;
+    }
+
+    .carousel-control-prev {
+        margin-left: 52%;
+        margin-top: 32px;
+    }
+
+    .carousel-control-next {
+        margin-right: 27%;
+        margin-top: 32px;
+    }
+
+    .rentNow {
+        width: 100%;
+        margin-top: 156px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding-left: 136px;
+        padding-right: 136px;
+    }
+
+    .rentNowCenter {
+        width: 100%;
+        background-color: #0D28A6;
+        border-radius: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rentNowTitle {
+        padding-left: 23.758%;
+        padding-right: 23.758%;
+    }
+
+    .rentNowDesc {
+        padding-left: 29.965%;
+        padding-right: 29.965%;
+    }
+
+    .carRentButton.font {
+        margin-top: 52px;
+    }
+
+    .faq {
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 136px;
+        padding-right: 136px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    }
+
+    .faqDesc {
+        width: 42.809%;
+    }
+
+    .faqDesc h2 {
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    .faqDesc .font {
+        text-align: left;
+    }
+
+
+    .accordion {
+        margin-top: 8px;
+        width: 57.191%;
+    }
+
+    .accordion-item.top {
+        margin: 0px;
+    }
+
+    div#accordionExample.accordion {
+        margin: 0px
+    }
+
+    .accordion-header,
+    .accordion-body {
+        border-style: solid;
+        border-width: 1px;
+        border-color: gray;
+        border-radius: 3px;
+
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .accordion-button.collapsed {
+        padding: 16px 24px 16px 24px;
+    }
+
+    .rentCar {
+        display: flex;
+        width: 72.71%;
+        padding: 24px;
+        justify-content: space-between;
+        position: absolute;
+        background-color: white;
+        top: 448px;
+        left: 13.611%;
+        gap: 0px;
+        border-radius: 8px;
+        opacity: 0px;
+        box-shadow: 0px 0px 10px 0px #00000026;
+    }
+
+    .typeDrive,
+    .datePicker,
+    .timePicker,
+    .totalPassenger {
+        width: 21.1%;
+    }
+
+    .findCar {
+        width: 9.21%;
+    }
+
+    .rentCar h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14px;
+        text-align: left;
+        color: #3C3C3C;
+        margin-bottom: 4px;
+    }
+
+    .rentCarBox {
+        width: 100%;
+        height: auto;
+        padding: 9px 12px;
+        gap: 8px;
+        border-radius: 2px;
+        border: 1px;
+        opacity: 0px;
+        border: 1px solid #D0D0D0;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+        text-align: left;
+    }
+
+    .findCar {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .buttonFindCar {
+        width: 100%;
+        height: auto;
+        padding: 8px 12px 8px 12px;
+        gap: 10px;
+        border-radius: 2px 0px 0px 0px;
+        opacity: 0px;
+        background: #5CB85F;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        border-style: none;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 136px;
+        padding-right: 163px;
+        margin-bottom: 84px;
+        padding-top: 150px;
+    }
+
+    .contactUs {
+        width: 23.488%;
+        height: 112px;
+        font-weight: 300;
+        text-align: left;
+
+    }
+
+    .navbarFooter {
+        width: 6.923%;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .navbarFooterPart {
+        margin-bottom: 16px;
+    }
+
+    .navbarFooterPart a {
+        text-decoration: none;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .socialMedia {
+        width: 23.488%;
+        height: 128px;
+    }
+
+    .connectWith {
+        font-weight: 300;
+        text-align: left;
+    }
+
+    .socialMediaPart {
+        width: 224px;
+        height: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .socialMediaPart img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .copyright {
+        width: 23.488%;
+    }
+
+    .copyright h2 {
+        font-weight: 300;
+        text-align: left;
+    }
+
+    header .rectangle {
+        margin-left: 136px;
+    }
+
+}
