@@ -63,6 +63,12 @@ apiRouter.delete(
   controllers.api.v1.carsController.destroy
 );
 
+//route for listorder
+apiRouter.get(
+  "/api/v1/listorder",
+  controllers.api.v1.authController.authorize,
+  controllers.api.v1.listorderController.list
+);
 /**
  * TODO: Delete this, this is just a demonstration of
  *       error handler

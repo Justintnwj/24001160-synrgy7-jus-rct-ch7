@@ -12,9 +12,11 @@ import Login from "./components/pages/login/Login";
 import AdminLogin from "./components/adminpages/login/AdminLogin";
 import LandingPage from "./components/adminpages/pagesadmin/LandingPage";
 import Navbar from "./components/adminpages/pagesadmin/Navbar";
-import Dashboard2 from "./components/adminpages/pagesadmin/Dashboard2";
+import DeleteCard from "./components/adminpages/pagesadmin/DeleteCard";
+import Card from "./components/adminpages/pagesadmin/Card";
+import AddNewCar from "./components/adminpages/pagesadmin/AddNewCar";
+import EditCar from "./components/adminpages/pagesadmin/EditCar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import RouteApp from "./Route";
 
 function App() {
   return (
@@ -48,11 +50,20 @@ function App() {
         <Route path="/admindashboard" element={<>
           <LandingPage />
         </>} />
-        <Route path="/admindashboardtesting2" element={<>
+        <Route path="/card" element={<>
+          <Card />
+        </>} />
+        <Route path="/deletecard" element={<>
+          <DeleteCard />
+        </>} />
+        <Route path="/adminpage" element={<>
           <Navbar />
-          <Route path="/admindashboardtesting23" element={<>
-            <Dashboard2/>
-            </>} />
+        </>} />
+        <Route path="/admindashboard/listcars/addnewcar" element={<>
+          <AddNewCar />
+        </>} />
+        <Route path="/admindashboard/listcars/editcar" element={<>
+          <EditCar />
         </>} />
       </Routes>
     </Router>

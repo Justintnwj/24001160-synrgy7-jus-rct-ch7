@@ -694,6 +694,7 @@ p#insert-results.resultSuccess {
 .navTable {
     width: 83.95%;
     padding-left: 25px;
+    padding-right: 24px;
 }
 
 .breadcrumb {
@@ -706,30 +707,35 @@ p#insert-results.resultSuccess {
     font-weight: 700;
     line-height: 30px;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
 }
 
-.listDashboard{
+.listDashboard {
     margin-top: 24px;
 }
 
-.titleListOrderTable, .titleListCarsTable {
+.titleListOrderTable,
+.titleListCarsTable {
     display: flex;
     align-items: center;
     height: 24px;
     margin-bottom: 16px;
 }
 
-.titleListCarsTable{
-    
-}
-.titleListOrderTable h4.font, .titleListCarsTable h4.font {
+.titleListCarsTable {}
+
+.titleListOrderTable h4.font,
+.titleListCarsTable h4.font {
     margin: 0px;
 }
 
 .rectangleLOT {
     width: 4px;
     height: 24px;
-    background-color:#0D28A6;
+    background-color: #0D28A6;
     margin-right: 8px;
 }
 
@@ -739,13 +745,17 @@ p#insert-results.resultSuccess {
     display: flex;
     flex-direction: column;
 }
+
 .tableCars {
     width: 100%;
-    border-collapse: collapse; /* Agar batas antar sel tabel tidak terlihat */
+    border-collapse: collapse;
+    /* Agar batas antar sel tabel tidak terlihat */
 }
 
-.tableCars th, .tableCars td {
-    padding: 12px 8px; /* Sesuaikan padding sesuai kebutuhan */
+.tableCars th,
+.tableCars td {
+    padding: 12px 8px;
+    /* Sesuaikan padding sesuai kebutuhan */
 }
 
 th.tableHeadNo {
@@ -768,6 +778,205 @@ th.tableHeadUpdated {
 
 ul.pagination {
     margin-top: 40px;
+}
+
+.carCardTable {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.carCard {
+    width: 351px;
+    height: 482px;
+    background-color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    box-shadow: 0px 0px 4px 0px #00000026;
+    margin-bottom: 24px;
+}
+
+.carUploadImage {
+    margin-bottom: 16px;
+    width: 303px;
+    height: 222px;
+    background-color: white;
+}
+
+.carName {
+    margin-bottom: 8px;
+}
+
+.carPrice {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.timeRentCar {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.clockImage,
+.keyImage {
+    margin-right: 8px;
+}
+
+.updatedCarTime {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.deleteEditCar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteCar,
+.editCar {
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.deleteCarCard {
+    width: 387px;
+    height: 333px;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 999;
+}
+
+.deleteCarCard img {
+    display: block;
+    margin: 0 auto;
+}
+
+.carBeep {
+    margin-bottom: 24px;
+}
+
+.descDeleteCar h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.descDeleteCar p {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.buttonYaNo {
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonYa,
+.buttonNo {
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.addNewCar {
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+}
+
+.listCars {
+    display: flex;
+    flex-direction: column;
+}
+
+.typeMobil {
+    display: flex;
+    width: 292px;
+    justify-content: space-between;
+}
+
+.buttonTypeMobil {
+    padding: 8px 12px;
+    border-radius: 1px;
+    border-color: #AEB7E1;
+    border-style: solid;
+    background-color: white;
+    color: #AEB7E1;
+}
+
+
+.buttonTypeMobil:hover {
+    border-color: #0D28A6;
+    background-color: #CFD4ED;
+    color: #0D28A6;
+}
+
+.buttonTypeMobil.active {
+    border-color: #0D28A6;
+    background-color: #CFD4ED;
+    color: #0D28A6;
+}
+
+.addNew {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.addNewCarForm {
+    padding: 16px;
+}
+
+.formTitle {
+    font-size: 12px;
+    margin: 0px;
+}
+
+.formAddNewCar {
+    display: flex;
+    width: 494px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.formAddNewCarStyle {
+    width: 339px;
+    height: 36px;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: #D0D0D0;
+}
+.buttonInputANW {
+    margin-top: 282px;
+    display: flex;
+    width: 143px;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.cancelButtonANW {
+    padding: 8px 12px;
+    background-color: white;
+    color: #0D28A6;
+    border-color:#0D28A6;
+}
+.saveButtonANW {
+    padding: 8px 12px;
+    color: white;
+    background-color: #0D28A6;
+    border-style: none;
 }
 
 @media only screen and (min-width:1200px) {
@@ -1035,19 +1244,61 @@ ul.pagination {
         padding: 16px 24px 16px 24px;
     }
 
+    .rentCarPosition {
+        position: relative;
+        width: 72.71%;
+        top: -53px;
+        left: 13%;
+    }
+
     .rentCar {
         display: flex;
-        width: 72.71%;
         padding: 24px;
         justify-content: space-between;
-        position: absolute;
         background-color: white;
-        top: 448px;
-        left: 13.611%;
         gap: 0px;
         border-radius: 8px;
         opacity: 0px;
         box-shadow: 0px 0px 10px 0px #00000026;
+    }
+
+    .carCardTableRent {
+        display: flex;
+        margin-top: 27px;
+        justify-content: space-between;
+        background-color: white;
+        gap: 0px;
+        border-radius: 8px;
+        opacity: 0px;
+        box-shadow: 0px 0px 10px 0px #00000026;
+        flex-wrap: wrap;
+    }
+
+    .carCardRent {
+        width: 333px;
+        height: 586px;
+        background-color: white;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        box-shadow: 0px 0px 4px 0px #00000026;
+        margin-bottom: 24px;
+    }
+
+    .chooseCar {
+        background-color: #5CB85F;
+        color: white;
+        width: 285px;
+        height: 48px;
+        border-style: none;
+    }
+
+    .carUploadImageRent {
+        margin-bottom: 16px;
+        width: 285px;
+        height: 222px;
+        background-color: white;
     }
 
     .typeDrive,
