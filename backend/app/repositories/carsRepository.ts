@@ -1,3 +1,4 @@
+import { UpdatedAt } from "sequelize-typescript";
 import Cars from "../models/cars"; // Pastikan mengganti "Cars" dengan model yang sesuai
 
 type ReqCarsBodyType = {
@@ -5,16 +6,18 @@ type ReqCarsBodyType = {
   availability: boolean;
   price: number;
   category: string;
-  image: string;
   start_date: Date;
   end_date: Date;
 };
+
+type UpdateCarsBodyTypeImage = {
+  image :string;
+}
 
 type UpdateCarsType = {
   availability: boolean;
   price: number;
   category: string;
-  image: string;
   start_date: Date;
   end_date: Date;
 };
@@ -22,6 +25,14 @@ type UpdateCarsType = {
 export default {
   create(createArgs: ReqCarsBodyType) {
     return Cars.create(createArgs);
+  },
+
+  updateImage(name:string, updateArgs : UpdateCarsBodyTypeImage) {
+    return Cars.update(updateArgs, {
+      where : {
+        name,
+      },
+    });
   },
 
   update(name: string, updateArgs: UpdateCarsType) {

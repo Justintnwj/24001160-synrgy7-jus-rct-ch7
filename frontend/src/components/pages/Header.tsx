@@ -33,7 +33,7 @@ export default function Header() {
               </li>
               <li className="nav-item">
                 <button className="registerButton">
-                  <a href="domain.tld/about">Register</a>
+                  <a href="http://localhost:5173/register">Register</a>
                 </button>
               </li>
             </ul>

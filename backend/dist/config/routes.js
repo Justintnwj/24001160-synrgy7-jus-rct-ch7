@@ -27,6 +27,7 @@ apiRouter.put("/api/v1/users/:id", controllers_1.default.api.v1.authController.a
 apiRouter.get("/api/v1/cars", controllers_1.default.api.v1.authController.authorize, controllers_1.default.api.v1.carsController.listTrue);
 apiRouter.get("/api/v1/all-cars", controllers_1.default.api.v1.authController.authorize, controllers_1.default.api.v1.carsController.list);
 apiRouter.post("/api/v1/cars", controllers_1.default.api.v1.authController.authorize, controllers_1.default.api.v1.carsController.create);
+apiRouter.put("/api/v1/cars/updateim/:name", controllers_1.default.api.v1.carsController.updateImage);
 apiRouter.put("/api/v1/cars/:name", controllers_1.default.api.v1.authController.authorize, controllers_1.default.api.v1.carsController.update);
 apiRouter.get("/api/v1/cars/:name", controllers_1.default.api.v1.carsController.show);
 apiRouter.delete("/api/v1/cars/:name", controllers_1.default.api.v1.authController.authorize, controllers_1.default.api.v1.carsController.destroy);

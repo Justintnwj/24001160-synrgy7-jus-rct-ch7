@@ -45,6 +45,7 @@ export default function LandingPage() {
     const [visiblePages, setVisiblePages] = useState<number[]>([]);
     const paginationRange = 5;
     const totalPages = Math.ceil(dataListCars.length / itemsPerPage);
+    const [pictureCar, setPictureCar] = useState<string>('');
 
     const [currentSortOrder, setCurrentSortOrder] = useState<string>('');
     const [sortDirectionOrder, setSortDirectionOrder] = useState<string>('ascending');
@@ -120,6 +121,8 @@ export default function LandingPage() {
     const showDbBc = () => {
         setShowDashboardDashboard(true);
         setIsDashboardBold(true);
+        console.log(pictureCar);
+        
     }
 
     const showListCarsBc = () => {
@@ -338,7 +341,7 @@ export default function LandingPage() {
     };
 
     const filteredCars = selectedType === 'all' ?
-        dataListCars.filter(car => car.name.toLowerCase().includes(searchTerm.toLowerCase())) :
+        dataListCars.filter(car => car.name.includes(searchTerm.toLowerCase())) :
         dataListCars.filter(car => car.category.toLowerCase() === selectedType && car.name.toLowerCase().includes(searchTerm.toLowerCase()));
 
     return (
@@ -635,7 +638,7 @@ export default function LandingPage() {
                                         {filteredCars.map((car) => (
                                             <div key={car.id} className="carCard font">
                                                 <div className="carUploadImage">
-                                                    {car.images}
+                                                    <img src={car.image}/>
                                                 </div>
                                                 <div className="carName">
                                                     {car.name} / {car.category}

@@ -8,6 +8,13 @@ exports.default = {
     create(createArgs) {
         return cars_1.default.create(createArgs);
     },
+    updateImage(name, updateArgs) {
+        return cars_1.default.update(updateArgs, {
+            where: {
+                name,
+            },
+        });
+    },
     update(name, updateArgs) {
         return cars_1.default.update(updateArgs, {
             where: {

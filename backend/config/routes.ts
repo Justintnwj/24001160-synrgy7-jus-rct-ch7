@@ -52,6 +52,10 @@ apiRouter.post(
   controllers.api.v1.carsController.create
 );
 apiRouter.put(
+  "/api/v1/cars/updateim/:name",
+  controllers.api.v1.carsController.updateImage
+);
+apiRouter.put(
   "/api/v1/cars/:name",
   controllers.api.v1.authController.authorize,
   controllers.api.v1.carsController.update

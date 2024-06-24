@@ -19,6 +19,11 @@ exports.default = {
             return carsRepository_1.default.create(requestBody);
         });
     },
+    updateImage(name, requestBodyImage) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return carsRepository_1.default.updateImage(name, requestBodyImage);
+        });
+    },
     update(name, requestBody) {
         return __awaiter(this, void 0, void 0, function* () {
             return carsRepository_1.default.update(name, requestBody);

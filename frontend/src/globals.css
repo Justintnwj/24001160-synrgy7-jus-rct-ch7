@@ -807,6 +807,10 @@ ul.pagination {
     background-color: white;
 }
 
+.carUploadImage img {
+    width: 303px;
+    height: 222px;
+}
 .carName {
     margin-bottom: 8px;
 }
@@ -977,6 +981,10 @@ ul.pagination {
     color: white;
     background-color: #0D28A6;
     border-style: none;
+}
+
+.App-logo {
+    margin-left: 156px;
 }
 
 @media only screen and (min-width:1200px) {
@@ -1299,6 +1307,11 @@ ul.pagination {
         width: 285px;
         height: 222px;
         background-color: white;
+    }
+
+    .carUploadImageRent img {
+        width: 285px;
+        height: 222px;
     }
 
     .typeDrive,

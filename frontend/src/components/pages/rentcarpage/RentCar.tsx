@@ -109,7 +109,7 @@ export default function RentCar() {
                 {dataListCars.map((car) => (
                     <div key={car.id} className="carCardRent font">
                         <div className="carUploadImageRent">
-                            {car.images}
+                            <img src={car.image} />
                         </div>
                         <div className="carName">
                             {car.name} / {car.category}

@@ -1,27 +1,39 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function EditCar() {
-
+    const [imageFile, setImageFile] = useState<string | ArrayBuffer | null>();
 
     const editCarName = localStorage.getItem('careditname')
     const token = localStorage.getItem('token');
     const navigate = useNavigate();
     const [insertResult, setInsertResult] = useState<string>("");
     console.log(editCarName);
-
+    const fileRef = useRef<HTMLInputElement | null>(null);
     const [name, setName] = useState("");
     const [category, setCategory] = useState("Small");
     const [price, setPrice] = useState("");
-    const [picture, setPicture] = useState("");
 
     const handleCancel = () => {
         navigate("/admindashboard");
     };
 
+    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+        const file = event.target.files?.[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = () => {
+                if (reader.result) {
+                    setImageFile(reader.result);
+                }
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+
     const handleEditCar = async () => {
 
-        if (name === "" || category === "" || price == "" || picture === "") {
+        if (name === "" || category === "" || price == "") {
             setInsertResult("Semua Kolom Harus Diisi");
             return;
         }
@@ -33,7 +45,7 @@ export default function EditCar() {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${token}`
                 },
-                body: JSON.stringify({ name, category, price, picture })
+                body: JSON.stringify({ name, category, price})
             });
 
             const result = await response.json();
@@ -41,8 +53,32 @@ export default function EditCar() {
 
 
             if (response.ok) {
-                localStorage.removeItem('careditname')
-                navigate("/admindashboard");
+                try {
+                    if (!fileRef.current?.files?.[0]) {
+                        console.error("No file selected");
+                        return;
+                    }
+            
+                    const formData = new FormData();
+                    formData.append("image", fileRef.current.files[0]);
+            
+                    const response = await fetch(`http://localhost:8000/api/v1/cars/updateim/${name}`, {
+                        method: "PUT",
+                        body: formData,
+                    });
+            
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+            
+                    const result = await response.json();
+                    console.log("Upload successful:", result);
+                    setInsertResult(result.message);
+                    localStorage.removeItem('careditname')
+                    navigate("/admindashboard");
+                } catch (error) {
+                    console.error("Error uploading picture:", error);
+                }
             } else {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
@@ -92,13 +128,14 @@ export default function EditCar() {
                 <div className="formAddNewCar">
                     <h4 className="formTitle">Foto</h4>
                     <input
-                        type="text"
+                        ref={fileRef}
                         className="formAddNewCarStyle"
-                        value={picture}
-                        onChange={(e) => setPicture(e.target.value)}
-                        required
+                        type="file"
+                        placeholder="Gambar"
+                        onChange={handleChange}
                     />
                 </div>
+                <img src={typeof imageFile === 'string' ? imageFile : ''} className="App-logo" alt="logo" style={{ width: '200px' }} />
             </div>
             <div className="buttonInputANW font">
                 <button className="cancelButtonANW" onClick={handleCancel}>Cancel</button>

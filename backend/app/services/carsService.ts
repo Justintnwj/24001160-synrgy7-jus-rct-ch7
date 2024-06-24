@@ -5,18 +5,20 @@ type ReqCarsBodyType = {
   availability: boolean;
   price: number;
   category: string;
-  image: string;
   start_date: Date;
   end_date: Date;
   createBy: string;
   updateBy: string;
 };
 
+type UpdateCarsBodyTypeImage = {
+  image :string;
+}
+
 type UpdateCarsType = {
   availability: boolean;
   price: number;
   category: string;
-  image: string;
   start_date: Date;
   end_date: Date;
 };
@@ -24,6 +26,10 @@ type UpdateCarsType = {
 export default {
   async create(requestBody: ReqCarsBodyType) {
     return carsRepository.create(requestBody);
+  },
+
+  async updateImage(name:string,requestBodyImage : UpdateCarsBodyTypeImage) {
+    return carsRepository.updateImage(name,requestBodyImage);
   },
 
   async update(name: string, requestBody: UpdateCarsType) {
